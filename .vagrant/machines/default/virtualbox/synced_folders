@@ -1,1 +1,1 @@
-{"virtualbox":{"/vagrant":{"guestpath":"/vagrant","hostpath":"/Users/shirotamasahiro/MyVagrant/MyCentOS","disabled":false,"__vagrantfile":true}}}
+{"virtualbox":{"/home/vagrant":{"guestpath":"/home/vagrant","hostpath":"/Users/shirotamasahiro/vagrant","disabled":false,"__vagrantfile":true},"/vagrant":{"guestpath":"/vagrant","hostpath":"/Users/shirotamasahiro/vagrant","disabled":false,"__vagrantfile":true}}}
