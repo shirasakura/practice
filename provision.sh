@@ -10,6 +10,7 @@ sudo updatedb
 sudo yum -y install zip unzip
 #php7.1とphp moduleのインストール
 sudo yum install -y --enablerepo=remi,remi-php71 php-common php-pdo php-cli php-devel php-mysqlnd php-mbstring php-gd php-intl php-xml php-bcmat
+vagrant plugin install vagrant-vbguest
 
 
 
