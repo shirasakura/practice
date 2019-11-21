@@ -33,23 +33,18 @@ Vagrant.configure("2") do |config|
 
   # Create a private network, which allows host-only access to the machine
   # using a specific IP.
-  # config.vm.network "private_network", ip: "192.168.33.10"
+  config.vm.network "private_network", ip: "192.168.33.10"
 
   # Create a public network, which generally matched to bridged network.
   # Bridged networks make the machine appear as another physical device on
   # your network.
   # config.vm.network "public_network"
-    config.ssh.guest_port = 2222
-    config.ssh.username = "vagrant"
-    config.ssh.host = "127.0.0.1"
-    config.ssh.private_key_path = "/Users/shirotamasahiro/vagrant/.vagrant/machines/default/virtualbox/private_key"
-    config.ssh.insert_key = false
 
   # Share an additional folder to the guest VM. The first argument is
   # the path on the host to the actual folder. The second argument is
   # the path on the guest to mount the folder. And the optional third
   # argument is a set of non-required options.
-    config.vm.synced_folder "/Users/shirotamasahiro/vagrant", "/home/vagrant", type: "virtualbox"
+    config.vm.synced_folder "/Users/shirotamasahiro/vagrant", "/home/vagrant/develop", type: "virtualbox"
   # Provider-specific configuration so you can fine-tune various
   # backing providers for Vagrant. These expose provider-specific options.
   # Example for VirtualBox:
