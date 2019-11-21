@@ -37,9 +37,9 @@ class Person extends Model
         'mail' => 'email',
         'age' => 'integer|min:0|max:150'
     );
-    public function board()
+    public function boards()
     {
-        return $this->hasOne('App\Board');
+        return $this->hasMany('App\Board');
     }
 }
 
