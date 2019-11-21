@@ -15,6 +15,24 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+
+// 前に作ったやつ（userで作ったやつ）
+
+Route::get('hello', 'HelloController@index');
+Route::get('hello/add', 'HelloController@add');
+Route::post('hello/add', 'HelloController@create');
+Route::get('hello/edit', 'HelloController@edit');
+Route::post('hello/edit', 'HelloController@update');
+Route::get('hello/del', 'HelloController@del');
+Route::post('hello/del', 'HelloController@remove');
+Route::get('person', 'PersonController@index');
+Route::get('person/find', 'PersonController@find');
+Route::post('person/find', 'PersonController@search');
+Route::get('person/add', 'PersonController@add');
+Route::post('person/add', 'PersonController@create'); 
+
+// 作成中＜リレーション＞（ローカル開発環境・仮想環境）
+
 Route::get('board', 'BoardController@index');
 
 Route::get('board/add', 'BoardController@add');

@@ -1,10 +1,10 @@
 @extends('layouts.helloapp')
 
-@section('title', 'Board.index')
+@section('title', 'Person.index')
 
 @section('menubar')
     @parent
-    ボードページ
+    インデックスページ
 @endsection
 
 @section('content')
@@ -19,5 +19,5 @@
 @endsection
 
 @section('footer')
-    copyright 2019
+    &copy;2017 kokoa
 @endsection
