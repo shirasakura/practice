@@ -61,4 +61,8 @@ class HelloController extends Controller
         DB::update('delete from people where id =:id', $param);
         return redirect('/hello');
     }
+    public function rest(Request $request)
+    {
+        return view('hello.rest');
+    }
 }
