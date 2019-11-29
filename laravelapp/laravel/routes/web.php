@@ -18,7 +18,8 @@ Route::get('/', function () {
 
 // 前に作ったやつ（userで作ったやつ）
 
-Route::get('hello', 'HelloController@index');
+Route::get('hello', 'HelloController@index')
+    ->middleware('auth');
 Route::get('hello/add', 'HelloController@add');
 Route::post('hello/add', 'HelloController@create');
 Route::get('hello/edit', 'HelloController@edit');
@@ -49,3 +50,7 @@ Route::post('hello/session', 'HelloController@ses_put');
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+//Auth ユーザー認証
+Route::get('hello/auth', 'HelloController@getAuth');
+Route::post('hello/auth', 'HelloController@postAuth');
