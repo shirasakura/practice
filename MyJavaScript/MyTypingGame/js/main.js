@@ -15,7 +15,7 @@
   let isPlaying = false;
 
   //milliseconds
-  const timeLimit = 3 * 1000;
+  const timeLimit = 4 * 1000;
   const target = document.getElementById('target');
   const scoreLabel = document.getElementById('score');
   const missLabel = document.getElementById('miss');
